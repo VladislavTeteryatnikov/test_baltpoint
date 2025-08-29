@@ -12,5 +12,35 @@ ___
 4. Seeder с тестовыми данными
 ___
 
+### Развернуть проект:
+1. Клонировать проект
+```bash
+git clone https://github.com/VladislavTeteryatnikov/test_baltpoint.git
+```
+2. Перейти в папку с проектом
+```bash
+cd test_baltpoint
+```
+3. Создать .env и скопировать в него .env.example
+```bash
+cp .env.example .env
+```
+4. При необходимости настроить подключение к БД в файле .env
+
+5. Установить зависимости (автоматически будет создан ключ и накатятся миграции, seeder заполнит таблицы)
+```bash
+composer install
+```
+
+6. Запустить сервер
+```bash
+php artisan serve
+```
+8. Открыть в браузере страницу с постами
+   http://localhost:8000/posts
+
+
+
+
 
 

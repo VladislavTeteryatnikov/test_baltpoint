@@ -39,7 +39,7 @@
         "post-install-cmd": [
             "@php artisan key:generate",
             "@php artisan app:create-database",
-            "@php artisan migrate --force"
+            "@php artisan migrate --force --seed"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
